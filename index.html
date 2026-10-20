@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a0a24">
+  <title>Chúc mừng 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="anh/bohoa.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Pháo hoa vẽ trên canvas -->
+  <canvas id="fireworks"></canvas>
+  <!-- Tim bay -->
+  <div id="hearts"></div>
+
+  <!-- Màn hình mở quà (cần 1 lần chạm để trình duyệt cho phép phát nhạc) -->
+  <div id="intro">
+    <div class="gift">🎁</div>
+    <p class="intro-text">Có một món quà dành cho <span id="introName"></span></p>
+    <button id="openBtn">Mở quà 💝</button>
+  </div>
+
+  <!-- Logo góc trên bên trái -->
+  <div class="logo"><span class="logo-heart">♥</span>Đức Thiệp</div>
+
+  <main id="main">
+    <h1 class="title">
+      <span class="small">Chúc mừng ngày</span>
+      <span class="big">Phụ Nữ Việt Nam</span>
+      <span class="date">20 · 10</span>
+    </h1>
+
+    <section class="stage">
+      <figure class="photo left" data-index="0">
+        <img alt="Ảnh cá nhân 1">
+        <div class="placeholder">📷<br>Bấm để chọn ảnh</div>
+      </figure>
+
+      <!-- Bó hoa -->
+      <div class="bouquet-wrap">
+        <div class="bouquet-glow"></div>
+        <img class="bouquet" src="anh/bohoa.jpg" alt="Bó hoa tặng em">
+      </div>
+
+      <figure class="photo right" data-index="1">
+        <img alt="Ảnh cá nhân 2">
+        <div class="placeholder">📷<br>Bấm để chọn ảnh</div>
+      </figure>
+    </section>
+
+    <p id="message" class="message"></p>
+
+    <footer class="made-by">Made by <strong>Đức Thiệp</strong> <span>♥</span></footer>
+  </main>
+
+  <!-- Nút bật/tắt nhạc -->
+  <button id="musicBtn" title="Bật/tắt nhạc">🎵</button>
+  <audio id="bgm" loop preload="auto"></audio>
+  <input type="file" id="photoInput" accept="image/*" hidden>
+  <input type="file" id="musicInput" accept="audio/*" hidden>
+
+  <script src="script.js"></script>
+</body>
+</html>
