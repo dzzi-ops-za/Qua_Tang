@@ -1,6 +1,6 @@
 // ================== TUỲ CHỈNH Ở ĐÂY ==================
 const CONFIG = {
-  ten: 'Em yêu',
+  ten: 'Cô gái nhỏ',
   loiChuc: 'Chúc em ngày 20/10 thật xinh đẹp, luôn rạng rỡ như những đoá hoa, '
          + 'mãi hạnh phúc và được yêu thương thật nhiều. 💐❤️',
   anh: ['anh/anh1.jpg', 'anh/anh2.jpg'],   // đặt ảnh vào thư mục anh/
